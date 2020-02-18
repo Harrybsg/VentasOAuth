@@ -7,35 +7,34 @@
         <servlet-name>Validar</servlet-name>
         <servlet-class>controlador.Validar</servlet-class>
     </servlet>
+    <servlet-mapping>
+        <servlet-name>Validar</servlet-name>
+        <url-pattern>/Validar</url-pattern>
+    </servlet-mapping>
     <servlet>
         <servlet-name>Controlador</servlet-name>
         <servlet-class>controlador.Controlador</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Validar</servlet-name>
-        <url-pattern>/validar/*</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>Controlador</servlet-name>
-        <url-pattern>/controlador/*</url-pattern>
+        <url-pattern>/Controlador</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>Index</servlet-name>
-        <jsp-file>/WEB-INF/index.jsp</jsp-file>
+        <jsp-file>/index.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
-        <url-pattern>/WEB-INF/index.jsp</url-pattern>
+        <url-pattern>/VentasOAuth_war_exploded/index.jsp</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>Principal</servlet-name>
-        <jsp-file>/WEB-INF/principal.jsp</jsp-file>
+        <jsp-file>/Principal.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>Principal</servlet-name>
-        <url-pattern>/WEB-INF/principal.jsp</url-pattern>
+        <url-pattern>/VentasOAuth_war_exploded/Principal.jsp</url-pattern>
     </servlet-mapping>
 </web-app>

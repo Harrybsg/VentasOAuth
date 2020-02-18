@@ -9,7 +9,7 @@ public class Conexion {
     String url = "jdbc:mysql://localhost:3306/bd_ventas", user = "root", pass = "";
     public Connection Conexion(){
         try{
-            Class.forName("com.mysql.jdb.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection(url, user , pass);
         }
         catch (ClassNotFoundException | SQLException e) {

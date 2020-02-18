@@ -11,6 +11,10 @@ import java.io.PrintWriter;
 public class Controlador extends javax.servlet.http.HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+    }
+
+    protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
         String accion = request.getParameter("accion");
         switch (accion) {
             case "Principal":
@@ -21,11 +25,7 @@ public class Controlador extends javax.servlet.http.HttpServlet {
         }
     }
 
-    protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
-
-    }
-
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
-
+        processRequest(request,response);
     }
 }
